@@ -1,4 +1,3 @@
-import React from "react";
 import { IoCheckmarkDone } from "react-icons/io5";
 import ChatFooter from "./ChatFooter";
 import Image from "next/image";
@@ -52,9 +51,9 @@ export const users = [
 const dataChat = "8/20/2020"
 const MainChat = () => {
   return (
-    <div className="p-10 m-auto">
-        <h3 className="text-center mb-10">{dataChat}</h3>
-      <ul className="flex flex-col gap-7 mb-52">
+    <div className='p-10 m-auto'>
+        <h3 className='text-center mb-10'>{dataChat}</h3>
+      <ul className='flex flex-col gap-7 mb-52'>
         {users.length > 0 &&
           users.map((items, index) => {
             return (
@@ -62,43 +61,43 @@ const MainChat = () => {
                 key={items.id}
                 className={
                   items.mine
-                    ? "flex items-end justify-end"
-                    : "flex items-start justify-start gap-5"
+                    ? 'flex items-end justify-end'
+                    : 'flex items-start justify-start gap-5'
                 }
               >
                 {!items.mine ? <div><Image width={40} height={40} src={items.avatar} alt={items.name}/></div> : <></>}
                 <div
                   className={
                     items.mine
-                      ? "p-3 bg-[#007AFF] w-80 rounded-xl text-white relative"
-                      : "p-3 bg-[#F2F2F7] w-80 rounded-xl relative"
+                      ? 'p-3 bg-[#007AFF] w-80 rounded-xl text-white relative'
+                      : 'p-3 bg-[#F2F2F7] w-80 rounded-xl relative'
                   }
                 >
                   {items.mine ? (
                     <>
                     <div> 
                         <p>{items.text}</p>
-                        <div className="flex justify-end items-center gap-2">
+                        <div className='flex justify-end items-center gap-2'>
                             <p>{items.timestamp}</p>
-                            <IoCheckmarkDone size={"25px"}/>
+                            <IoCheckmarkDone size={'25px'}/>
                         </div>
                     </div>
-                    <div className="w-5 h-3 bg-[#007AFF] absolute top-0 right-[-10px] rounded-b-[50%] "/>
+                    <div className='w-5 h-3 bg-[#007AFF] absolute top-0 right-[-10px] rounded-b-[50%] '/>
                     </>
                   ) : (
                     <>
-                    <div className="flex gap-2 w-full">
+                    <div className='flex gap-2 w-full'>
                       
-                      <div className="w-full">
-                        <div className="flex gap-5 mb-1">
-                          <h2 className="font-bold">{items.name}</h2> <p className="text-[#666668]">{items.role}</p>
+                      <div className='w-full'>
+                        <div className='flex gap-5 mb-1'>
+                          <h2 className='font-bold'>{items.name}</h2> <p className='text-[#666668]'>{items.role}</p>
                         </div>
                         <p>{items.text}</p>
-                        <div className="flex justify-end">{items.timestamp}</div>
+                        <div className='flex justify-end'>{items.timestamp}</div>
                       </div>
                      
                     </div>
-                    <div className="w-5 h-3 bg-[#F2F2F7] absolute top-0 left-[-10px] rounded-b-[50%] "/>
+                    <div className='w-5 h-3 bg-[#F2F2F7] absolute top-0 left-[-10px] rounded-b-[50%] '/>
                     </>
                   )}
                 </div>

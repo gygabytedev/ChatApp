@@ -1,4 +1,4 @@
-import React from 'react';
+
 import UsersAvatar from './UsersAvatar';
 import ChatInfo from './ChatInfo';
 import ExtraInfo from './ExtraInfo';

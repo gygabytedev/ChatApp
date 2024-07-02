@@ -4,11 +4,11 @@ import MainChat from "@/Components/MainChat";
 
 export default function Home() {
   return (
-    <div className="flex justify-between h-[100vh] flex-col">
+    <div className='flex justify-between h-[100vh] flex-col'>
 
       <HeaderChat />
 
-     <div className="w-full h-[90%] overflow-y-auto">
+     <div className='w-full h-[90%] overflow-y-auto'>
      <MainChat />
      </div>
 
