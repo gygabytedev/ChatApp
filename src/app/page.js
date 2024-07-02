@@ -1,6 +1,7 @@
 import ChatFooter from "@/Components/ChatFooter";
 import HeaderChat from "@/Components/HeaderChat";
 import MainChat from "@/Components/MainChat";
+import '../app/globals.css'; 
 
 export default function Home() {
   return (
